@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QGIS Web Client Help</title>
+  <link type="text/css" href="css/help.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+</head>
+<body>
+<div id="help_page">
+<div id="help_wrapper">
+  <header>
+    <div id="help_caption">
+      <h1>Quantum GIS Web Client</h1>
+      <h2 class="SubCaption">Default Client Help</h2>
+    </div>
+  </header>
+ <hr/>
+  <nav>
+    <div id="help_logo">
+      <span class="logo_img"><a href="http://qgis.org"><img src="img/qgis-icon.png"/></a></span>
+    </div>
+    <ul class="ul_help">
+    <li class="list-header">Tabla de contenidos
+      <ul class="ul_help">
+        <li><span class="linksim" onclick="scrollToHelpItem('help_generalUsage')">Uso general</span>
+          <ul class="ul_help">
+            <li><span class="linksim" onclick="scrollToHelpItem('help_workingWithLayers')">Capas del mapa</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_searching')">Buscar</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_navigating')">Mapa de navegación</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_measuring')">Realizar medidas</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_printing')">Imprimir</span></li>
+          </ul>
+        </li>
+        <li><span class="linksim" onclick="scrollToHelpItem('help_about')">Sobre QGIS Web Client</span>
+          <ul class="ul_help">
+            <li><span class="linksim" onclick="scrollToHelpItem('help_license')">Licencia</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_moreHelp')">Más ayuda</span></li>
+            <li><span class="linksim" onclick="scrollToHelpItem('help_usefulLinks')">Enlaces útiles</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+   </ul>
+  </nav>
+  <div id="help_content">
+  <section id="help_general">
+    <article>
+      <h2 id="help_generalUsage">Uso general</h2>
+      <p>La ventana de la aplicación está dividida en tres paneles: el panel <i>Información y Herramientas</i>  a la izquierda, el panel principal con la barra de botones el la parte superior en el centro
+        y el panel <i>Atributos</i> en la derecha. De acuerdo con la interacción con la aplicación los paneles izquierdo y derecho pueden estar visibles o no
+        en un momento dado.
+      </p>
+    </article>
+    <article>
+      <h3 id="help_workingWithLayers">Trabajando con capas</h3>
+      <p>En el panel<i>Información y Herramientas</i> se listan todas las capas disponibles<i>Capas del mapa</i>. Marcando o desmarcando una capa se cambia su visibilidad.
+            La leyenda de todas las capas visibles se muestran en el panel de leyenda.
+      </p>
+      <p>Si se marca en el nombre de una capa se vuelve la<b>capa activa</b>.
+      </p>
+      <p>Usa el <img src="gis_icons/mActionIdentify.png" alt="identiy"/> botón en el panel de la barra principal para obtener información de cualquier objeto en el mapa.
+            La información será visible cuando se pase el ratón sobre el objeto y/o se muestra en el panel
+             <i>Atributos</i> cuando se pulsa sobre el objeto. Eligiendo una opción en <i>Identificación de objetos</i>
+            se puede elegir qué capa(s) se consultan.
+      </p>
+    </article>
+    <article>
+      <h3 id="help_searching">Búsqueda de contenidos en el mapa</h3>
+      <p>Introducir cualquier palabra ( nombre de una calle o lugar, tipo de entidad, etc) o parte de ella en la casilla de búsqueda en la parte superior
+        del panel de mapas. Todo el contenido coincidente de la búsqueda es mostrado.Seleccione uno pulsando sobre el mismo. El contenido seleccionado se muestra automáticamente destacado en el mapa y la entidad queda resaltada.
+		</p>
+    </article>
+    <article>
+      <h3 id="help_navigating">Navigación en el mapa</h3>
+      <p>Navegar usando los botones de navegación <img src="gis_icons/mActionZoomBox.png" alt="ZoomBox"/>
+        <img src="gis_icons/mActionZoomFullExtent.png" alt="ZoomFullExtent"/>
+        <img src="gis_icons/mActionZoomLast.png" alt="ZoomLast"/> and <img src="gis_icons/mActionZoomNext.png" alt="ZoomNext"/> en la barra de botones.
+          Todos los botones tienen  textos flotantes (tooltips) visibles al pasar el ratón sobre ellos.
+      </p>
+      <p>También se puede usar el zoom con l abarra interactiva que se encuentra en la esquina superior izquierda del panel de mapa
+        o escribiendo una determinada escala en el cuadro de escala de la esquina inferior derecha.
+        Si se dispone de un ratón de rueda, el nivel de zoom se puede controlar con esta.
+      </p>
+      <p>Se puede hacer zoom a la extensión presionando el botón izquierdo del ratón a la vez que se mueve el mismo. Se puede ir a una coordenada específica introduciéndola en el recuadro de coordenadas en la esquina inferior derecha.
+      </p>
+    </article>
+    <article>
+      <h3 id="help_measuring">Medir distancias y Areas</h3>
+      <p>Usar el botón <img src="gis_icons/mActionMeasure.png" alt="Measure"/> y <img src="gis_icons/mActionMeasureArea.png" alt="MeasureArea"/> en la barra de botones.
+        Un pulso con el botón izquierdo  marca un punto en la línea o área a medir, con doble pulsación se finaliza la medida. El resultado de la medida se actualiza continuamenteen el mapa.
+      </p>
+    </article>
+    <article>
+      <h3 id="help_printing">Imprimir</h3>
+      <p>Si el webmaster a definido plantillas de impresión estas estarán disponibles cuando se pulse el botón 
+        <img src="gis_icons/mActionFilePrint.png" alt="FilePrint"/> de imprimir. El marco mostrado en el mapa resalta el área seleccionada para imprimir.
+        Se puede modificar el tamaño, la escala y la orientación del marco de acuerdo a las necesidades.
+      </p>
+    </article>
+  </section>
+  <section id="help_about_qgis">
+    <article>
+      <h2 id="help_about">Sobre QGIS Web Client</h2>
+      <p>QGIS or Quantum GIS Web Client es un cliente webgis basado en OpenLayers, GeoExt y ExtJS que hace uso de las extensiones específicas WMS de QGIS. Soporta renderizado de mapas, información de entidades,leyenda gráfica de las capas, búsquedas e impresión. Compatible con la mayoría de los navegadores.
+      </p>
+    </article>
+    <article>
+      <h3 id="help_license">Licencia</h3>
+      <p>Quantum GIS Web Client está licenciado bajo la licencia BSD. Consultar el link
+        <a href="http://github.com/qgis/qgis-web-client/blob/master/README" target="_blank">README</a>
+        para ver el texto comleto de la misma ( en inglés).
+      </p>
+    </article>
+    <article>
+      <h3 id="help_moreHelp">Obtener más ayuda</h3>
+      <p>Si encuentra algún problema en el uso de esta aplicación por favor contacte con el  webmaster de la página que está visitando. El equipo de desarrollo de Quantum GIS Web Client no puede resolver problemas de una implementación d el mismo específica.</p>
+    </article>
+    <article>
+      <h3 id="help_usefulLinks">Enlaces relacionados</h3>
+      <ul>
+        <li><a href="http://github.com/qgis/qgis-web-client" target="_blank">Código fuente de QGIS Web Client en Github</a></li>
+        <li><a href="http://www.openlayers.org" target="_blank">Página oficial de OpenLayers</a></li>
+        <li><a href="http://geoext.org" target="_blank">Página oficial de GeoExt</a></li>
+        <li><a href="http://www.sencha.com/products/extjs" target="_blank">Página oficial de Sencha Ext JS</a></li>
+        <li><a href="http://qgis.org" target="_blank">QGIS Home</a></li>
+         <li><a href="http://hub.qgis.org/projects/quantum-gis/wiki/QGIS_Server_Tutorial" target="_blank">Tutorial de QGIS Server</a></li>
+      </ul>
+    </article>
+  </section>
+  </div>
+  <div style="Clear: both"></div>
+</div>
+</div>
+</body>
+</html>
